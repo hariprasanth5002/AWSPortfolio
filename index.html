@@ -3,52 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Home</title>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #333;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center;">
-    
-    <!-- Header -->
-    <header style="background: #333; color: white; padding: 15px; text-align: center; font-size: 24px;">
-        My E-Commerce Store
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#more-info">More Info</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <!-- Banner Section -->
-    <div style="background: url('https://source.unsplash.com/1200x400/?shopping') no-repeat center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 32px; font-weight: bold;">
-        Best Deals Just for You!
-    </div>
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is my personal website showcasing my work and skills.</p>
+    </section>
     
-    <!-- Products Section -->
-    <div style="padding: 20px;">
-        <h2 style="color: #333;">Featured Products</h2>
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-            <div style="background: white; padding: 15px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 5px;">
-                <img src="https://source.unsplash.com/200x200/?electronics" alt="Product 1" style="width: 100%; border-radius: 5px;">
-                <h3 style="margin: 10px 0;">Smartphone</h3>
-                <p style="color: #666;">Latest model with advanced features.</p>
-                <p style="font-weight: bold; color: #333;">$699</p>
-                <button style="background: #28a745; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
-            </div>
-            <div style="background: white; padding: 15px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 5px;">
-                <img src="https://source.unsplash.com/200x200/?clothing" alt="Product 2" style="width: 100%; border-radius: 5px;">
-                <h3 style="margin: 10px 0;">Fashion Jacket</h3>
-                <p style="color: #666;">Trendy and comfortable.</p>
-                <p style="font-weight: bold; color: #333;">$99</p>
-                <button style="background: #28a745; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
-            </div>
-            <div style="background: white; padding: 15px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 5px;">
-                <img src="https://source.unsplash.com/200x200/?shoes" alt="Product 3" style="width: 100%; border-radius: 5px;">
-                <h3 style="margin: 10px 0;">Running Shoes</h3>
-                <p style="color: #666;">High performance and durable.</p>
-                <p style="font-weight: bold; color: #333;">$120</p>
-                <button style="background: #28a745; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
-            </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Here is a brief introduction about myself.</p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <button onclick="showDetails()">Show My Details</button>
+        <div id="details" style="display: none;">
+            <p>Name: John Doe</p>
+            <p>Skills: Web Development, Graphic Design</p>
+            <p>Projects: Website A, App B, Design C</p>
         </div>
-    </div>
+    </section>
     
-    <!-- Footer -->
-    <footer style="background: #333; color: white; padding: 15px; margin-top: 20px;">
-        &copy; 2025 My E-Commerce Store | All rights reserved.
-    </footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: johndoe@example.com</p>
+    </section>
     
+    <section id="more-info">
+        <h2>More Info</h2>
+        <p>Additional details about my work and experience.</p>
+    </section>
+    
+    <script>
+        function showDetails() {
+            document.getElementById('details').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
